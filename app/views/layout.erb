@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Living Stones Church
+      <% if content_for?(:title) %>
+        - <%=  yield_content :title %>
+    <% end %>
+  </title>
+</head>
+<body>
+  <ul>
+    <li>About Us</li>
+    <li>Our Vision</li>
+    <li>Our Leaders</li>
+    <li>Upcoming Events</li>
+    <li>Gallery</li>
+    <li>Sermons</li>
+    <li>Contact Us</li>
+    <ul>
+      <% yield %>
+<div id='footer'>Registered Charity</div>
+</body>
+</html>
