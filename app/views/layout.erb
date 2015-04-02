@@ -5,6 +5,7 @@
     <meta name="viewport" content="device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
     <title>
       Living Stones Church
       <% if content_for?(:title) %>
@@ -14,17 +15,24 @@
 </head>
 <body>
   <div class="container">
-    <ul>
-      <li>About Us</li>
-      <li>Our Vision</li>
-      <li>Our Leaders</li>
-      <li>Upcoming Events</li>
-      <li>Gallery</li>
-      <li>Sermons</li>
-      <li>Contact Us</li>
-    </ul>
+    <div id="menu_bar" >
+      <ul class="nav navbar-nav text-uppercase">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Vision</a></li>
+        <li><a href="#">Our Leaders</a></li>
+        <li><a href="#">Upcoming Events</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Sermons</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="page-header"></div>
+    <div id="banner_div" class="row"></div>
+
     <%= yield %>
-    <div id='footer'>Registered Charity</div>
+
+    <div id='footer' class="row"><p class="text-center">Registered Charity</p></div>
   </div>
+  <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
