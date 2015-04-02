@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>
       Living Stones Church
       <% if content_for?(:title) %>
@@ -9,16 +13,18 @@
   </title>
 </head>
 <body>
-  <ul>
-    <li>About Us</li>
-    <li>Our Vision</li>
-    <li>Our Leaders</li>
-    <li>Upcoming Events</li>
-    <li>Gallery</li>
-    <li>Sermons</li>
-    <li>Contact Us</li>
+  <div class="container">
     <ul>
-      <% yield %>
-<div id='footer'>Registered Charity</div>
+      <li>About Us</li>
+      <li>Our Vision</li>
+      <li>Our Leaders</li>
+      <li>Upcoming Events</li>
+      <li>Gallery</li>
+      <li>Sermons</li>
+      <li>Contact Us</li>
+    </ul>
+    <%= yield %>
+    <div id='footer'>Registered Charity</div>
+  </div>
 </body>
 </html>
