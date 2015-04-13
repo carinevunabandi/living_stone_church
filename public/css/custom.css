@@ -1,4 +1,23 @@
+.container {
+  width: 70%;
+}
+
 #menu_bar li {
-  font-size:18px;
+  font-size:17px;
   font-weight: bold;
+}
+
+#menu_bar{ 
+  /*border: solid blue;*/
+  margin: 0 auto;
+}
+
+#about_us {
+  /*margin-left: 0;*/
+  float: left;
+}
+
+#contact_us {
+  /*margin-right: 0;*/
+  float: right;
 }
