@@ -15,4 +15,8 @@ class LivingStonesChurch < Sinatra::Base
   get '/events' do
     erb :'events'
   end
+
+  get '/contact' do
+    erb :'contact'
+  end
 end
