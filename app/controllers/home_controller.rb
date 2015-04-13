@@ -7,4 +7,8 @@ class LivingStonesChurch < Sinatra::Base
   get '/vision' do
     erb :'vision'
   end
+
+  get '/leaders' do
+    erb :'leaders'
+  end
 end
