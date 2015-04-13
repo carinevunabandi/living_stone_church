@@ -11,4 +11,8 @@ class LivingStonesChurch < Sinatra::Base
   get '/leaders' do
     erb :'leaders'
   end
+
+  get '/events' do
+    erb :'events'
+  end
 end
