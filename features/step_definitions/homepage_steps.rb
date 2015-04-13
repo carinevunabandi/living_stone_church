@@ -14,8 +14,8 @@ And 'I should see the Our Leaders tab' do
   expect(page.body).to have_content('Our Leaders')
 end
 
-And 'I should see the Upcoming Events tab' do
-  expect(page.body).to have_content('Upcoming Events')
+And 'I should see the Events tab' do
+  expect(page.body).to have_content('Events')
 end
 
 And 'I should see the Sermons tab' do

@@ -1,5 +1,5 @@
 When 'I click on the Upcoming Events tab' do
-  click_link('Upcoming Events')
+  click_link('Events')
 end
 
 Then 'I should see details about upcoming events' do
