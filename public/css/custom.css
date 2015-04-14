@@ -21,3 +21,13 @@
   /*margin-right: 0;*/
   float: right;
 }
+
+#menu_bar ul li ul li {
+  font-size:17px;
+  font-color: red;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+  font-color: red;
+}

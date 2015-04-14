@@ -8,6 +8,14 @@ class LivingStonesChurch < Sinatra::Base
     erb :'vision'
   end
 
+  get '/confession' do
+    erb :'confession'
+  end
+
+  get '/declaration' do
+    erb :'declaration'
+  end
+
   get '/leaders' do
     erb :'leaders'
   end

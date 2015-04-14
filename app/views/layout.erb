@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-">
-    <meta name="viewport" content="device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
     <title>
       Living Stones Church
       <% if content_for?(:title) %>
         - <%=  yield_content :title %>
     <% end %>
   </title>
+  <meta charset="UTF-">
+  <meta name="viewport" content="device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
   <div class="container">
@@ -21,7 +21,13 @@
     <div class="row">
       <div id="menu_bar">
         <ul class="nav navbar-nav text-uppercase">
-          <li><a href="/us">About Us</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="us">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="/confession">Our Confession</a></li>
+            <li><a href="/declaration">Our Faith</a></li>
+          </ul>
+          </li>
           <li><a href="/vision">Our Vision</a></li>
           <li><a href="/leaders">Our Leaders</a></li>
           <li><a href="/meetings">Our Meetings</a></li>
@@ -33,14 +39,18 @@
       </div>
     </div>
 
-    <%= yield %>
+  <%= yield %>
 
-    <div id='footer' class="footer navbar-fixed-bottom">
-      <p class="text-center text-small">
-      Copyright © 2015 Living Stones Baptist Church. All Rights Reserved.<br />
-      Living Stones Baptist Church. Registered Charity XXXXXXX.
-      </p></div>
-    </div>
-    <script src="/js/bootstrap.min.js"></script>
-  </body>
+  <div id='footer' class="footer navbar-fixed-bottom">
+    <p class="text-center text-small">
+    Copyright © 2015 Living Stones Baptist Church. All Rights Reserved.<br />
+    Living Stones Baptist Church. Registered Charity XXXXXXX.
+    </p></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <script src="/js/custom.js"></script>
+</body>
 </html>
