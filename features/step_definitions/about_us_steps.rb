@@ -2,9 +2,14 @@ When "I hover over the About Us tab" do
   find_link("About Us")
 end
 
-Then "I should see the church's Confession and Declaration sub\-menus" do
+Then "I should see the church's Vision, Confession and Declaration sub-menus" do
+  expect(page).to have_link("Our Vision")
   expect(page).to have_link("Our Confession")
   expect(page).to have_link("Our Faith")
+end
+
+When  "I select the Our Vision sub-menu" do
+  click_link("Our Vision")
 end
 
 When "I select the Our Confession sub-menu" do
@@ -13,6 +18,10 @@ end
 
 When "I select the Our Declaration sub-menu" do
   click_link("Our Faith")
+end
+
+Then "I should see the church's Vision" do
+  expect(page).to have_content("Revealing God’s glory")
 end
 
 Then "I should see the church's confession" do

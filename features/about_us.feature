@@ -5,7 +5,12 @@ Feature: Anything about and under the About Us tab
     When    I hover over the About Us tab
 
   Scenario: Viewing contents under the About Us tab
-    Then  I should see the church's Confession and Declaration sub-menus
+    Then  I should see the church's Vision, Confession and Declaration sub-menus
+
+  Scenario: Viewing the church's Vision
+    When  I hover over the About Us tab
+    And   I select the Our Vision sub-menu
+    Then  I should see the church's Vision
 
   Scenario: Viewing the church's confession
     When  I hover over the About Us tab

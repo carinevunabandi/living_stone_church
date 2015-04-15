@@ -2,16 +2,16 @@ When 'I visit the home page' do
   visit '/'
 end
 
+Given 'I am on the homepage' do
+  visit '/'
+end
+
 Then 'I should see the Home tab' do
   expect(page).to have_content('Home')
 end
 
 Then 'I should see the About Us tab' do
   expect(page.body).to have_content('About Us')
-end
-
-And 'I should see the Our Vision tab' do
-  expect(page.body).to have_content('Our Vision')
 end
 
 And 'I should see the Our Leaders tab' do
