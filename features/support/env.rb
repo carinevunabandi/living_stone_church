@@ -1,3 +1,5 @@
+ENV['RACK_ENV'] = 'test'
+
 require 'capybara/cucumber'
 require File.expand_path('../../../living_stones_church', __FILE__)
 

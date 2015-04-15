@@ -1,0 +1,20 @@
+test:
+  adapter: mysql2
+  pool:     20
+  host:     localhost
+  database: living_stones_test
+  username: root
+  password:
+
+development:
+  adapter:  mysql2
+  pool:     20
+  host:     localhost
+  database: living_stones_development
+  username: root
+  password:
+
+production:
+  database: living_stones
+  username:
+  password:
