@@ -20,6 +20,11 @@ class LivingStonesChurch < Sinatra::Base
     erb :'leaders'
   end
 
+  get '/sermons' do
+    @sermons = Sermon.all
+    erb :'sermons'
+  end
+
   get '/meetings' do
     erb :'meetings'
   end

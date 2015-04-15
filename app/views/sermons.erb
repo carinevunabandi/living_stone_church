@@ -1,0 +1,38 @@
+<div>
+  <% if @sermons.empty? %>
+    <p class="lead" >
+    No sermons available.
+    </P>
+  <% else %>
+    <table class="table table-stripped">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Length</th>
+      </tr>
+      <% @sermons.each do |sermon|  %>
+        <tr>
+          <td><%= sermon.title %></td>
+          <td><%= sermon.preacher %></td>
+          <td><%= sermon.length %></td>
+        </tr>
+      <% end %>
+    </table>
+  <% end %>
+
+  <p class="lead">
+  <br />
+  <br />
+  </p>
+</div>
+<div id='updates' class="row">
+  <div id="calendar_widget_div" class="col-md-4 quick_feed">
+    <h3 class="text-warning text-center">What's on</h3>
+  </div>
+  <div id="latest_articles_div" class="col-md-4 quick_feed">
+    <h3 class="text-warning text-center">Latest Articles</h3>
+  </div>
+  <div id="latest_sermons_div"  class="col-md-4 quick_feed">
+    <h3 class="text-warning text-center">Latest Sermons</h3>
+  </div>
+</div>
