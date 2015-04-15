@@ -2,6 +2,10 @@ When 'I visit the home page' do
   visit '/'
 end
 
+Then 'I should see the Home tab' do
+  expect(page).to have_content('Home')
+end
+
 Then 'I should see the About Us tab' do
   expect(page.body).to have_content('About Us')
 end
